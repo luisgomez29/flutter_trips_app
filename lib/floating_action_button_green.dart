@@ -11,7 +11,7 @@ class _FloatingActionButtonGreen extends State<FloatingActionButtonGreen> {
   bool _isFavorite = false;
 
   void onPressedFav() {
-    final contextScaffold = Scaffold.of(context);
+    final contextScaffold = ScaffoldMessenger.of(context);
     contextScaffold.removeCurrentSnackBar();
     contextScaffold.showSnackBar(SnackBar(
       content: _isFavorite
